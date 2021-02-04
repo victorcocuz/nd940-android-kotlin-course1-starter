@@ -16,4 +16,5 @@
     <string name="instructions_title">Instructions</string>
     <string name="instructions_text">Press below to see all the shoes</string>
     <string name="instructions_button">See Shoes</string>
+    <string name="menu_item_log_out">Log Out</string>
 </resources>
