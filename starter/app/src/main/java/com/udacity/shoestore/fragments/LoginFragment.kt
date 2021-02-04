@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentLoginBinding
 
@@ -24,10 +25,9 @@ class LoginFragment : Fragment() {
         binding.loginButton.setOnClickListener (
             Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_onboardingFragment)
         )
-        binding.loginButtonCreate.setOnClickListener (
-            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_onboardingFragment)
-        )
-
+        binding.loginButtonCreate.setOnClickListener {
+            it.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToOnboardingFragment())
+        }
         // Hide the keyboard.
 //        val imm = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
 //        imm.hideSoftInputFromWindow(it.windowToken, 0)

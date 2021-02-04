@@ -1,5 +1,7 @@
 <resources>
+    <!--Main-->
     <string name="app_name">ShoeStore</string>
+    <string name="menu_item_log_out">Log Out</string>
 
     <!--Login Fragment-->
     <string name="login_hint_user">Enter your username here</string>
@@ -16,5 +18,16 @@
     <string name="instructions_title">Instructions</string>
     <string name="instructions_text">Press below to see all the shoes</string>
     <string name="instructions_button">See Shoes</string>
-    <string name="menu_item_log_out">Log Out</string>
+
+    <!--Shoe Listing Fragment-->
+    <string name="shoe_details_add_shoe">submit</string>
+
+    <!--Shoe Details Fragment-->
+    <string name="shoe_details_title_text">Fill in shoe details</string>
+    <string name="shoe_details_name">Name</string>
+    <string name="shoe_details_size">Size</string>
+    <string name="shoe_details_company">Company</string>
+    <string name="shoe_details_description">Description</string>
+    <string name="shoe_details_button_save_changes">Save Changes</string>
+    <string name="shoe_details_button_discard_changes">Discard Changes</string>
 </resources>

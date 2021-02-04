@@ -26,9 +26,10 @@ class MainActivity : AppCompatActivity() {
         Timber.plant(Timber.DebugTree())
 
         // Navigation controller
+        navController = this.findNavController(R.id.nav_host_fragment)
         setSupportActionBar(binding.toolbar)
 //        appBarConfiguration = AppBarConfiguration(navController.graph)
-        navController = this.findNavController(R.id.nav_host_fragment)
+
         NavigationUI.setupActionBarWithNavController(this, navController)
 //        NavigationUI.setupWithNavController(binding.navView, navController)
     }
@@ -38,7 +39,6 @@ class MainActivity : AppCompatActivity() {
 //        super.onRestoreInstanceState(savedInstanceState)
 //    }
     override fun onSupportNavigateUp(): Boolean {
-        val navController = this.findNavController(R.id.nav_host_fragment)
         return navController.navigateUp()
     }
 
