@@ -15,7 +15,6 @@ import com.udacity.shoestore.databinding.ActivityMainBinding
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
-//    private lateinit var drawerLayout: DrawerLayout
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -28,10 +27,9 @@ class MainActivity : AppCompatActivity() {
         // Navigation controller
         navController = this.findNavController(R.id.nav_host_fragment)
         setSupportActionBar(binding.toolbar)
-//        appBarConfiguration = AppBarConfiguration(navController.graph)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
 
         NavigationUI.setupActionBarWithNavController(this, navController)
-//        NavigationUI.setupWithNavController(binding.navView, navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {
