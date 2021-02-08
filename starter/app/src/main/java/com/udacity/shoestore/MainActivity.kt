@@ -34,21 +34,7 @@ class MainActivity : AppCompatActivity() {
 //        NavigationUI.setupWithNavController(binding.navView, navController)
     }
 
-    //
-//    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-//        super.onRestoreInstanceState(savedInstanceState)
-//    }
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp()
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.overflow_menu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item, navController)
-                || super.onOptionsItemSelected(item)
     }
 }
