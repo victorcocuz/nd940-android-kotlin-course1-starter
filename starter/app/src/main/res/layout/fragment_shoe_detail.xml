@@ -10,6 +10,7 @@
             type="com.udacity.shoestore.models.Shoe"/>
     </data>
 
+    <!-- ConstraintLayout makes it easy to layout items responsively. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/shoeDetailConstraint"
         android:layout_width="match_parent"

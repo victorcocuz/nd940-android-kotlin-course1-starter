@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".fragments.InstructionsFragment">
 
+    <!-- ConstraintLayout makes it easy to layout items responsively. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/instructionsConstraint"
         android:layout_width="match_parent"

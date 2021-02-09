@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".fragments.ShoeListingFragment">
 
+    <!-- ConstraintLayout makes it easy to layout items responsively. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/shoeListingConstraint"
         android:layout_width="match_parent"
@@ -17,6 +18,7 @@
             tools:layout_editor_absoluteX="184dp"
             tools:layout_editor_absoluteY="203dp">
 
+            <!-- LinearLayout makes it easy to layout items in line. -->
             <LinearLayout
                 android:id="@+id/shoe_listing_list"
                 android:layout_width="match_parent"

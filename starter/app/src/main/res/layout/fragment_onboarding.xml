@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".fragments.OnboardingFragment">
 
+    <!-- ConstraintLayout makes it easy to layout items responsively. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/onboardingConstraint"
         android:layout_width="match_parent"
